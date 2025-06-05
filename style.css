@@ -1,0 +1,238 @@
+/* Custom CSS for Avikalp Commi's Portfolio */
+
+body {
+    font-family: 'Roboto', sans-serif; /* Using Google Font */
+    padding-top: 56px; /* Adjust for fixed navbar height */
+    background-color: #f8f9fa; /* Light background for the whole page */
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #007bff; /* Primary blue for headings */
+}
+
+/* Navbar Customization */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.75) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+}
+
+/* Sections Styling */
+section {
+    padding: 80px 0;
+}
+
+section:nth-of-type(even) {
+    background-color: #f0f2f5; /* Slightly darker background for alternate sections */
+}
+
+/* Professional Summary Section */
+#professional-summary {
+    background: linear-gradient(45deg, #e9ecef, #ced4da); /* Light gradient background */
+    color: #343a40;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+#professional-summary h1 {
+    color: #343a40;
+    font-weight: 700;
+}
+
+/* Responsive button group for summary */
+.button-group-responsive .btn {
+    width: 100%; /* Full width on small screens */
+    max-width: 200px; /* Max width on larger screens */
+}
+
+@media (min-width: 576px) { /* Adjust for small and larger screens */
+    .button-group-responsive .btn {
+        width: auto; /* Auto width for inline buttons */
+    }
+}
+
+
+#professional-summary .btn {
+    border-radius: 50px; /* Pill-shaped buttons */
+    padding: 10px 25px;
+}
+
+#professional-summary .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+#professional-summary .btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+#professional-summary .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* About Me Section */
+#about-me .lead {
+    font-style: italic;
+    color: #555;
+}
+
+.about-me-photo {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    border: 5px solid #007bff; /* Border around the photo */
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+}
+
+
+/* Skills Section */
+#skills .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+#skills .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,.1);
+}
+
+#skills .card-title {
+    color: #007bff;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#skills ul {
+    padding-left: 20px;
+}
+
+/* Education Section */
+#education .card {
+    border: none;
+    border-left: 5px solid #007bff; /* Highlight current/most recent */
+    border-radius: 5px;
+}
+
+#education .card-title {
+    color: #343a40;
+}
+
+/* Projects Section */
+#projects .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+#projects .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,.1);
+}
+
+#projects .card-title {
+    color: #007bff;
+    font-weight: 700;
+}
+
+#projects .card-link {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#projects .card-link:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact .lead {
+    margin-bottom: 30px;
+}
+
+#contact .btn-lg {
+    border-radius: 50px;
+    padding: 12px 30px;
+}
+
+/* Form styling */
+#contact form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.05);
+}
+
+#contact .form-label {
+    font-weight: 600;
+    color: #343a40;
+}
+
+#contact .form-control {
+    border-radius: 5px;
+    border-color: #ddd;
+}
+
+#contact .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+#contact .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-weight: 700;
+}
+
+#contact .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+/* Footer */
+footer {
+    background-color: #343a40 !important;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments (using Bootstrap's breakpoints) */
+@media (max-width: 767.98px) {
+    body {
+        padding-top: 56px; /* Ensure space for navbar on small screens */
+    }
+    .navbar-toggler {
+        margin-right: 15px;
+    }
+    #professional-summary {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+    section {
+        padding: 50px 0;
+    }
+    .card {
+        margin-bottom: 20px; /* Add space between cards on small screens */
+    }
+    .about-me-photo {
+        width: 150px;
+        height: 150px;
+    }
+}
