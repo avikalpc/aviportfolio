@@ -236,3 +236,31 @@ footer {
         height: 150px;
     }
 }
+
+
+
+#certifications .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+#certifications .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,.1);
+}
+
+#certifications .card-title {
+    color: #007bff;
+    font-weight: 700;
+}
+#certifications .card-link {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+.imgg{
+    width: 100%;
+}

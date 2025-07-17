@@ -17,9 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // You can add more JavaScript here for interactive elements,
-    // like animations on scroll, if you want.
-    // For example, using Intersection Observer API for elements to fade in.
 
     // Example of a simple scroll animation (can be expanded)
     const faders = document.querySelectorAll('.card, .lead'); // Select elements to animate
